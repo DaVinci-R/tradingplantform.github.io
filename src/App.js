@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TodayChart from './components/TodayChart';
+import HistoryCharts from './components/HistoryCharts';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import Container from '@mui/material/Container';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <div>
+                    <Navbar />
+                    <Container>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/today" element={<TodayChart />} />
+                            <Route path="/history" element={<HistoryCharts />} />
+                        </Routes>
+                    </Container>
+                </div>
+            </Router>
+        </ThemeProvider>
+    );
 }
+
+const Home = () => (
+    <div>
+        <h1>Welcome to My Trading Platform</h1>
+    </div>
+);
 
 export default App;
