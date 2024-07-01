@@ -6,7 +6,7 @@ const TodayChart = () => {
         <Card>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    Today's Chart
+                    今日基差预测
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     This is where today's Power BI chart will be displayed.

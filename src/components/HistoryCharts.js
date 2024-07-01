@@ -6,19 +6,18 @@ const HistoryCharts = () => {
         <Card>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    Historical Charts
+                    历史基差预测
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     This is where historical Power BI charts will be displayed.
                 </Typography>
                 {/* Embed Power BI charts here */}
-                <iframe
-                    title="Historical Power BI Chart"
-                    width="1000"
-                    height="800"
-                    src="YOUR_POWER_BI_EMBED_URL_HISTORY"
-                    frameBorder="0"
-                    allowFullScreen="true"
+                <iframe title="历史基差预测与实际对比" 
+                width="1000" 
+                height="800" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiZGQ0ZWM1YTQtYTBmZS00NjQxLTljNmYtNDVmNTliMzc2MWU5IiwidCI6IjI2Y2NmYmI0LTc4MTYtNGY0My1hMjM2LWI2ZmZmYjg0Y2ZjMSIsImMiOjEwfQ%3D%3D" 
+                frameborder="0" 
+                allowFullScreen="true"
                 ></iframe>
             </CardContent>
         </Card>
