@@ -13,8 +13,8 @@ const HistoryCharts = () => {
                 </Typography>
                 {/* Embed Power BI charts here */}
                 <iframe title="历史基差预测与实际对比" 
-                width="600" 
-                height="373.5" 
+                width="1000" 
+                height="800" 
                 src="https://app.powerbi.com/view?r=eyJrIjoiMDc2MjgyMGUtOGY3OS00MGYxLTg3MTAtZDdjZmZhYzg3OWIyIiwidCI6IjI2Y2NmYmI0LTc4MTYtNGY0My1hMjM2LWI2ZmZmYjg0Y2ZjMSIsImMiOjEwfQ%3D%3D" 
                 frameborder="0" 
                 allowFullScreen="true"
